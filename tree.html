@@ -76,6 +76,16 @@ rel="stylesheet" type="text/css">
 id="canvas"></CANVAS>             </DIV></DIV>
 <SCRIPT>
 
+    function audioAutoPlay(id){
+      var audio = document.getElementById(id);
+      audio.play();
+      document.addEventListener("WeixinJSBridgeReady", function () {
+        audio.play();
+      }, false);
+    }
+    audioAutoPlay('Jaudio');
+
+
     (function(){
         var canvas = $('#canvas');
 		
@@ -241,11 +251,13 @@ id="canvas"></CANVAS>             </DIV></DIV>
 		<div class="main">
 			<footer style="line-height:20px">
 		</div>
+        <audio id="Jaudio" class="media-audio" src="music/bg_muc.mp3" preload loop="loop"></audio >
+
 	</div>
 </div>
 
-<embed width="160" height="20" type="application/x-shockwave-flash" src="http://www.myibird.com/wp-content/uploads/2013/05/music_player.swf" flashvars="mp3=http://www.diaozhale.com/Public/music/1369739710.mp3&amp;autoplay=1&amp;autoreplay=1" wmode="transparent" hidden="true" />
-
+<!-- <embed width="160" height="20" type="application/x-shockwave-flash" src="http://www.myibird.com/wp-content/uploads/2013/05/music_player.swf" flashvars="mp3=http://www.diaozhale.com/Public/music/1369739710.mp3&amp;autoplay=1&amp;autoreplay=1" wmode="transparent" hidden="true" />
+ -->
 <!-- <audio id="bgmMusic" src="http://qzone.haoduoge.com/music/C2C3F0LSXH4D771253124A26CF9C71C939B2A.mp3" preload="auto" type="audio/mp3" autoplay loop></audio>
  -->
 

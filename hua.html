@@ -24,10 +24,12 @@
             <font > 送你一朵大玫瑰 😁</font font-size="15px">
             <a style=" color:#FF0000; font-size:19px;" href='tree.html'>老婆 来种下我们的爱情之树吧</a>
         </div>
+         <audio id="Jaudio" class="media-audio" src="music/bg_muc.mp3" preload loop="loop"></audio >
+
     </div>
 </div>
-<embed width="160" height="20" type="application/x-shockwave-flash" src="http://www.myibird.com/wp-content/uploads/2013/05/music_player.swf" flashvars="mp3=http://www.diaozhale.com/Public/music/1369739710.mp3&amp;autoplay=1&amp;autoreplay=1" wmode="transparent" hidden="true" />
-
+<!-- <embed width="160" height="20" type="application/x-shockwave-flash" src="http://www.myibird.com/wp-content/uploads/2013/05/music_player.swf" flashvars="mp3=http://www.diaozhale.com/Public/music/1369739710.mp3&amp;autoplay=1&amp;autoreplay=1" wmode="transparent" hidden="true" />
+ -->
 
 <script> 
 
@@ -82,6 +84,17 @@
   function stop_draw(obj){
     clearInterval(obj);
   }
+
+
+  function audioAutoPlay(id){
+      var audio = document.getElementById(id);
+      audio.play();
+      document.addEventListener("WeixinJSBridgeReady", function () {
+        audio.play();
+      }, false);
+    }
+    audioAutoPlay('Jaudio');
+
 </script>
 
 </body>
