@@ -76,14 +76,7 @@ rel="stylesheet" type="text/css">
 id="canvas"></CANVAS>             </DIV></DIV>
 <SCRIPT>
 
-    function audioAutoPlay(id){
-      var audio = document.getElementById(id);
-      audio.play();
-      document.addEventListener("WeixinJSBridgeReady", function () {
-        audio.play();
-      }, false);
-    }
-    audioAutoPlay('Jaudio');
+ 
 
 
     (function(){
@@ -255,6 +248,17 @@ id="canvas"></CANVAS>             </DIV></DIV>
 
 	</div>
 </div>
+
+<script>
+    function audioAutoPlay(id){
+      var audio = document.getElementById(id);
+      audio.play();
+      document.addEventListener("WeixinJSBridgeReady", function () {
+        audio.play();
+      }, false);
+    }
+    audioAutoPlay('Jaudio');
+</script>
 
 <!-- <embed width="160" height="20" type="application/x-shockwave-flash" src="http://www.myibird.com/wp-content/uploads/2013/05/music_player.swf" flashvars="mp3=http://www.diaozhale.com/Public/music/1369739710.mp3&amp;autoplay=1&amp;autoreplay=1" wmode="transparent" hidden="true" />
  -->
