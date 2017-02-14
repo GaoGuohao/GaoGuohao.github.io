@@ -77,7 +77,14 @@ id="canvas"></CANVAS>             </DIV></DIV>
 <SCRIPT>
 
  
-
+    function audioAutoPlay(id){
+        var audio = document.getElementById(id);
+        audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay('Jaudio');
 
     (function(){
         var canvas = $('#canvas');
@@ -255,16 +262,4 @@ id="canvas"></CANVAS>             </DIV></DIV>
 
 </body>
 
-<script>
-
-  function audioAutoPlay(id){
-      var audio = document.getElementById(id);
-      audio.play();
-      document.addEventListener("WeixinJSBridgeReady", function () {
-        audio.play();
-      }, false);
-    }
-    audioAutoPlay('Jaudio');
-
-</script>
 </html>
