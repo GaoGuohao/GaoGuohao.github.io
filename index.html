@@ -39,10 +39,11 @@
             </div>
         </div>
         <!-- <P align=center><embed src= music/bg_muc.mp3 autostart=true loop=true widht=0 height=0 type=audio/mpeg></EMBED> -->
-        <audio controls="controls" autoplay="autoplay">
-<!--           <source src="/i/song.ogg" type="audio/ogg" />
- -->          <source src="music/bg_muc.mp3" type="audio/mpeg" />
-        </audio>
+       <!--  <audio controls="controls" autoplay="autoplay">
+          <source src="/i/song.ogg" type="audio/ogg" />
+          <source src="music/bg_muc.mp3" type="audio/mpeg" />
+        </audio> -->
+        <audio id="Jaudio" class="media-audio" src="music/bg_muc.mp3" preload loop="loop"></audio >
     </div>
 </div>
 <script type="text/javascript">
@@ -66,7 +67,17 @@
         adjustCodePosition();
         $("#code").typewriter();
     }
+
+    function audioAutoPlay(id){
+      var audio = document.getElementById(id);
+      audio.play();
+      document.addEventListener("WeixinJSBridgeReady", function () {
+      audio.play();
+    }, false);
+}
+    audioAutoPlay('Jaudio');
+
 </script>
-<embed width="160" height="20" type="application/x-shockwave-flash" src="http://www.myibird.com/wp-content/uploads/2013/05/music_player.swf" flashvars="mp3=http://www.diaozhale.com/Public/music/1369739710.mp3&amp;autoplay=1&amp;autoreplay=1" wmode="transparent" hidden="true" />
+<!-- <embed width="160" height="20" type="application/x-shockwave-flash" src="http://www.myibird.com/wp-content/uploads/2013/05/music_player.swf" flashvars="mp3=http://www.diaozhale.com/Public/music/1369739710.mp3&amp;autoplay=1&amp;autoreplay=1" wmode="transparent" hidden="true" /> -->
 </body>
 </html>
