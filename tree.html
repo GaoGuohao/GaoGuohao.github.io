@@ -76,15 +76,7 @@ rel="stylesheet" type="text/css">
 id="canvas"></CANVAS>             </DIV></DIV>
 <SCRIPT>
 
- 
-    function audioAutoPlay(id){
-        var audio = document.getElementById(id);
-        audio.play();
-        document.addEventListener("WeixinJSBridgeReady", function () {
-            audio.play();
-        }, false);
-    }
-    audioAutoPlay('Jaudio');
+    
 
     (function(){
         var canvas = $('#canvas');
@@ -242,7 +234,19 @@ id="canvas"></CANVAS>             </DIV></DIV>
         }));
 
         runAsync().start();
+
+      
+
     })();
+
+      // function audioAutoPlay(id){
+      //       var audio = document.getElementById(id);
+      //       audio.play();
+      //       document.addEventListener("WeixinJSBridgeReady", function () {
+      //           audio.play();
+      //       }, false);
+      //   }
+      //   audioAutoPlay('Jaudio');
     </SCRIPT>     				     </div>
 				</div>
 			</div>
