@@ -170,7 +170,7 @@
             ctx.scale(0.75, 0.75);
             ctx.font = "10px 微软雅黑,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
             // ctx.fillText("老婆，点击这里种下我们的爱情树", 23, 10);
-            ctx.fillText("种下爱情种子", 23, 10);
+            ctx.fillText("种下希望之树", 23, 10);
 
             ctx.restore();
         },

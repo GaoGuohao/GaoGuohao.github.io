@@ -1,83 +1,259 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>送给亲爱的的媳妇，彤彤夫人</title>
-    <meta name="keywords" content="彤彤">
-    <meta name="description" content="我爱你，老婆">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <style type="text/css">
-        @font-face {
-            font-family: digit;
-            src: url('digital-7_mono.ttf') format("truetype");
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><HTML 
+xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+ <body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+		             <LINK href="shuju/default.css" 
+rel="stylesheet" type="text/css">		 
+<SCRIPT src="shuju/jquery.min.js" type="text/javascript"></SCRIPT>
+		 
+<SCRIPT src="shuju/jscex.min.js" type="text/javascript"></SCRIPT>
+		 
+<SCRIPT src="shuju/jscex-parser.js" type="text/javascript"></SCRIPT>
+		 
+<SCRIPT src="shuju/jscex-jit.js" type="text/javascript"></SCRIPT>
+		 
+<SCRIPT src="shuju/jscex-builderbase.min.js" type="text/javascript"></SCRIPT>
+		 
+<SCRIPT src="shuju/jscex-async.min.js" type="text/javascript"></SCRIPT>
+		 
+<SCRIPT src="shuju/jscex-async-powerpack.min.js" type="text/javascript"></SCRIPT>
+		 
+<SCRIPT src="shuju/functions.js" type="text/javascript" charset="utf-8"></SCRIPT>
+		 
+<SCRIPT src="shuju/love.js" type="text/javascript" charset="utf-8"></SCRIPT>
+	     
+<STYLE type="text/css">
+
+</STYLE>   
+<DIV id="main">
+<DIV id="wrap">
+<DIV id="text">
+<DIV id="code"><FONT color="#ff0000">
+   
+     <SPAN class="say">
+        变老并不等于成熟
+    </SPAN><BR><BR>
+
+    <SPAN class="say">
+        真正的成熟在于看透
+    </SPAN><BR><BR>
+
+    <SPAN class="say">
+        离开的人越来越多
+    </SPAN><BR><BR>
+
+    <SPAN class="say">
+        留下的人越来越重要
+    </SPAN><BR><BR>
+
+    <SPAN class="say">
+        当你的才华还撑不起你的野心时
+    </SPAN><BR><BR>
+
+    <SPAN class="say">
+        那你就就应静下心来学习
+    </SPAN><BR><BR>
+
+ </FONT>
+
+<P></P>
+ 
+</DIV>
+
+    <!-- <DIV id="clock-box">我们已经在一起...</SPAN>              
+   
+    <DIV id="clock"></DIV> -->
+</DIV> 
+
+<CANVAS width="1100" height="500" id="canvas"></CANVAS>         
+
+<SCRIPT>
+
+    
+
+    (function(){
+        var canvas = $('#canvas');
+		
+        if (!canvas[0].getContext) {
+            $("#error").show();
+            return false;
         }
-    </style>
-    <link href="./style/default.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="./style/jquery.js"></script>
-    <script type="text/javascript" src="./style/garden.js"></script>
-    <script type="text/javascript" src="./style/functions.js"></script>
-</head>
-<body>
-<div id="mainDiv">
-    <div id="content">
-        <div id="loveHeart">
-            <canvas id="garden"></canvas>
-            <div id="words">
-                <div id="messages">
-                    老婆辛苦了，情人节快乐！
-                    <div id="elapseClock"></div>
-                </div>
-                <div id="loveu">
-                    永远爱你的老公<br/>
-                    <div class="signature">
-                      - 高国豪<br />
-                     <a href="hua.html"> 老婆 这里有礼物哦！</a>
-                    </div>
-                </div>
-                <div>
 
-                </div>
-            </div>
-        </div>
-        <!-- <P align=center><embed src= music/bg_muc.mp3 autostart=true loop=true widht=0 height=0 type=audio/mpeg></EMBED> -->
-       <!--  <audio controls="controls" autoplay="autoplay">
-          <source src="/i/song.ogg" type="audio/ogg" />
-          <source src="music/bg_muc.mp3" type="audio/mpeg" />
-        </audio> -->
-        <audio id="Jaudio" class="media-audio" src="music/bg_muc.mp3" preload loop="loop"></audio >
-    </div>
+        var width = canvas.width();
+        var height = canvas.height();
+        
+        canvas.attr("width", width);
+        canvas.attr("height", height);
+
+        var opts = {
+            seed: {
+                x: width / 2 - 20,
+                color: "rgb(190, 26, 37)",
+                scale: 2
+            },
+            branch: [
+                [535, 680, 570, 250, 500, 200, 30, 100, [
+                    [540, 500, 455, 417, 340, 400, 13, 100, [
+                        [450, 435, 434, 430, 394, 395, 2, 40]
+                    ]],
+                    [550, 445, 600, 356, 680, 345, 12, 100, [
+                        [578, 400, 648, 409, 661, 426, 3, 80]
+                    ]],
+                    [539, 281, 537, 248, 534, 217, 3, 40],
+                    [546, 397, 413, 247, 328, 244, 9, 80, [
+                        [427, 286, 383, 253, 371, 205, 2, 40],
+                        [498, 345, 435, 315, 395, 330, 4, 60]
+                    ]],
+                    [546, 357, 608, 252, 678, 221, 6, 100, [
+                        [590, 293, 646, 277, 648, 271, 2, 80]
+                    ]]
+                ]] 
+            ],
+            bloom: {
+                num: 700,
+                width: 1080,
+                height: 650,
+            },
+            footer: {
+                width: 1200,
+                height: 5,
+                speed: 10,
+            }
+        }
+
+        var tree = new Tree(canvas[0], width, height, opts);
+        var seed = tree.seed;
+        var foot = tree.footer;
+        var hold = 1;
+
+        canvas.click(function(e) {
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            if (seed.hover(x, y)) {
+                hold = 0; 
+                canvas.unbind("click");
+                canvas.unbind("mousemove");
+                canvas.removeClass('hand');
+            }
+        }).mousemove(function(e){
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            canvas.toggleClass('hand', seed.hover(x, y));
+        });
+
+        var seedAnimate = eval(Jscex.compile("async", function () {
+            seed.draw();
+            while (hold) {
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canScale()) {
+                seed.scale(0.95);
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canMove()) {
+                seed.move(0, 2);
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+        }));
+
+        var growAnimate = eval(Jscex.compile("async", function () {
+            do {
+    	        tree.grow();
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canGrow());
+        }));
+
+        var flowAnimate = eval(Jscex.compile("async", function () {
+            do {
+    	        tree.flower(2);
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canFlower());
+        }));
+
+        var moveAnimate = eval(Jscex.compile("async", function () {
+            tree.snapshot("p1", 240, 0, 610, 680);
+            while (tree.move("p1", 500, 0)) {
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+            foot.draw();
+            tree.snapshot("p2", 500, 0, 610, 680);
+
+            // 会有闪烁不得意这样做, (＞﹏＜)
+            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+            canvas.css("background", "#ffe");
+            $await(Jscex.Async.sleep(300));
+            canvas.css("background", "none");
+        }));
+
+        var jumpAnimate = eval(Jscex.compile("async", function () {
+            var ctx = tree.ctx;
+            while (true) {
+                tree.ctx.clearRect(0, 0, width, height);
+                tree.jump();
+                foot.draw();
+                $await(Jscex.Async.sleep(25));
+            }
+        }));
+
+        var textAnimate = eval(Jscex.compile("async", function () {
+		    var together = new Date();
+		    together.setFullYear(2014,12 ,09); 			//时间年月日
+		    together.setHours(00);						//小时	
+		    together.setMinutes(00);					//分钟
+		    together.setSeconds(0);					//秒前一位
+		    together.setMilliseconds(55);				//秒第二位
+
+		    $("#code").show().typewriter();
+            $("#clock-box").fadeIn(500);
+            while (true) {
+                timeElapse(together);
+                $await(Jscex.Async.sleep(1000));
+            }
+        }));
+
+        var runAsync = eval(Jscex.compile("async", function () {
+            $await(seedAnimate());
+            $await(growAnimate());
+            $await(flowAnimate());
+            $await(moveAnimate());
+
+            textAnimate().start();
+
+            $await(jumpAnimate());
+        }));
+
+        runAsync().start();
+
+      
+
+    })();
+
+      // function audioAutoPlay(id){
+      //       var audio = document.getElementById(id);
+      //       audio.play();
+      //       document.addEventListener("WeixinJSBridgeReady", function () {
+      //           audio.play();
+      //       }, false);
+      //   }
+      //   audioAutoPlay('Jaudio');
+    </SCRIPT>     				     </div>
+				</div>
+			</div>
 </div>
-<script type="text/javascript">
-    var offsetX = $("#loveHeart").width() / 2;
-    var offsetY = $("#loveHeart").height() / 2 - 55;
+	<div class="bg1">	
+		<div class="main">
+            <audio id="Jaudio" class="media-audio" src="music/bg_muc.mp3" preload loop="loop"></audio >
+		</div>
+	</div>
+</div>
 
-    if (!document.createElement('canvas').getContext) {
-        var msg = document.createElement("div");
-        msg.id = "errorMsg";
-        msg.innerHTML = "你的浏览器非常落后，不支持 HTML5!<br/>请使用 Chrome 14+/IE 9+/Firefox 7+/Safari 4+ 其中任意一款浏览器访问此页面";
-        document.body.appendChild(msg);
-        $("#code").css("display", "none")
-        $("#copyright").css("position", "absolute");
-        $("#copyright").css("bottom", "10px");
-        document.execCommand("stop");
-    } else {
-        setTimeout(function () {
-            adjustWordsPosition();
-            startHeartAnimation();
-        }, 100);
-        adjustCodePosition();
-        $("#code").typewriter();
-    }
 
-    function audioAutoPlay(id){
-      var audio = document.getElementById(id);
-      audio.play();
-      document.addEventListener("WeixinJSBridgeReady", function () {
-        audio.play();
-      }, false);
-    }
-    audioAutoPlay('Jaudio');
-
-</script>
-<!-- <embed width="160" height="20" type="application/x-shockwave-flash" src="http://www.myibird.com/wp-content/uploads/2013/05/music_player.swf" flashvars="mp3=http://www.diaozhale.com/Public/music/1369739710.mp3&amp;autoplay=1&amp;autoreplay=1" wmode="transparent" hidden="true" /> -->
 </body>
+
 </html>
